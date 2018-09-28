@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wangzhen.admin.permissionutils.MainActivity">
+
+    <Button
+        android:id="@+id/callPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="申请电话权限"
+        android:onClick="click"/>
+
+    <Button
+        android:id="@+id/camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="申请相机权限"
+        android:onClick="click"
+        app:layout_constraintLeft_toRightOf="@id/callPhone"/>
+
+    <Button
+        android:id="@+id/read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="申请读写权限"
+        android:onClick="click"
+        app:layout_constraintLeft_toRightOf="@id/camera"/>
+
+</android.support.constraint.ConstraintLayout>
